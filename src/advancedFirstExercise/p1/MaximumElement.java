@@ -1,4 +1,4 @@
-package advancedFirstExercise.p1.p3;
+package advancedFirstExercise.p1;
 
 import java.util.Scanner;
 
