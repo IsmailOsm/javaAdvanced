@@ -1,4 +1,4 @@
-package advancedFirstExercise.p1;
+package advancedStacksAndQueues;
 
 import java.util.ArrayDeque;
 import java.util.Scanner;
