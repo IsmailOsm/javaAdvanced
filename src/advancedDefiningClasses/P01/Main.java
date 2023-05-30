@@ -19,7 +19,7 @@ public class Main {
             list.add(person);
         }
         list = list.stream().filter(person -> person.getAge() > 30).collect(Collectors.toList());
-        list.sort(Comparator.comparing(person -> person.getName()));
+        list.sort(Comparator.comparing(Person::getName));
         for (Person person: list) {
             System.out.println(person.toString());
         }
