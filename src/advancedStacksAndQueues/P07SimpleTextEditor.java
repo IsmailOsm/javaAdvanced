@@ -3,7 +3,7 @@ package advancedStacksAndQueues;
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
-public class p07SimpleTextEditor {
+public class P07SimpleTextEditor {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number = Integer.parseInt(scanner.nextLine());

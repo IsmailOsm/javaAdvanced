@@ -3,7 +3,7 @@ package advancedExamPractice;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class p01ApocalypsePreparation {
+public class P01ApocalypsePreparation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         List<Integer> integerList = Arrays.stream(scanner.nextLine().split("\\s+")).map(Integer::parseInt).collect(Collectors.toList());

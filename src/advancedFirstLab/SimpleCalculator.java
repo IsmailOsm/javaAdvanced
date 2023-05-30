@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class simpleCalculator {
+public class SimpleCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         List<String> inputElements = Arrays.stream(scanner.nextLine().split("\\s+")).collect(Collectors.toList());

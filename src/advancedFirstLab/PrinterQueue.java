@@ -3,7 +3,7 @@ package advancedFirstLab;
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
-public class printerQueue {
+public class PrinterQueue {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String fileName = scanner.nextLine();

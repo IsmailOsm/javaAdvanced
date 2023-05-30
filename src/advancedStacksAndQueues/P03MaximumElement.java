@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class MaximumElement {
+public class P03MaximumElement {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayDeque<Integer> stack = new ArrayDeque<>();

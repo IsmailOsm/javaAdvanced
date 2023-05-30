@@ -5,7 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class p07HandsOfCards {
+public class P07HandsOfCards {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Map<String, Map<String, Integer>> map = new LinkedHashMap<>();

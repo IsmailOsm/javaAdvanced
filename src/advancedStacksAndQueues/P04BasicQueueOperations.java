@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class p4BasicQueueOperations {
+public class P04BasicQueueOperations {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] commandsArr = Arrays.stream(scanner.nextLine().split("\\s+"))

@@ -1,9 +1,8 @@
 package advancedExamPractice;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
-public class p01RubberDuckDebugger {
+public class P01RubberDuckDebugger {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] integerArr = Arrays .stream(scanner.nextLine().split("\\s+"))

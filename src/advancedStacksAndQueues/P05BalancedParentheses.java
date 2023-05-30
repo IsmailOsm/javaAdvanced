@@ -3,7 +3,7 @@ package advancedStacksAndQueues;
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
-public class p5BalancedParentheses {
+public class P05BalancedParentheses {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String string = scanner.nextLine();

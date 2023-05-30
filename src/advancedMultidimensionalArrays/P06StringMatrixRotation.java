@@ -2,7 +2,7 @@ package advancedMultidimensionalArrays;
 
 import java.util.Scanner;
 
-public class p06StringMatrixRotation {
+public class P06StringMatrixRotation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String rotation = scanner.nextLine();

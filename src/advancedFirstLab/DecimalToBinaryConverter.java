@@ -1,10 +1,9 @@
 package advancedFirstLab;
 
 import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.Scanner;
 
-public class decimalToBinaryConverter {
+public class DecimalToBinaryConverter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int decimalNumber = Integer.parseInt(scanner.nextLine());

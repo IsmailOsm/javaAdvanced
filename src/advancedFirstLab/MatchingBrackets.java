@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Scanner;
 
-public class matchingBrackets {
+public class MatchingBrackets {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String inputLine = scanner.nextLine();
