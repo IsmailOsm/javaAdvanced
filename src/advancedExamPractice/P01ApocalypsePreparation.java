@@ -52,28 +52,38 @@ public class P01ApocalypsePreparation {
             }
 
         }
-        Map<String, Integer> sortedMap = map.entrySet().stream()
-                .sorted(Map.Entry.<String, Integer>comparingByValue())
-                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, TreeMap::new));
+        List<Map.Entry<String, Integer>> sortedMap =
+                new ArrayList<>(map.entrySet());
+        Collections.sort(sortedMap,
+                Comparator.comparing(Map.Entry<String, Integer>::getValue).reversed().
+                        thenComparing(Map.Entry<String, Integer>::getKey));
         if (medicament.isEmpty() && textiles.isEmpty()) {
             System.out.println("Textiles and medicaments are both empty.");
-            sortedMap.forEach((key, value) -> System.out.println(key + " - " + value));
+            sortedMap.forEach((entry) -> System.out.println(entry.getKey() + " - " + entry.getValue()));
         } else if (medicament.isEmpty()) {
             System.out.println("Medicaments are empty.");
-            sortedMap.forEach((key, value) -> System.out.println(key + " - " + value));
-            int rest = 0;
+            sortedMap.forEach((entry) -> System.out.println(entry.getKey() + " - " + entry.getValue()));
+            System.out.print("Textiles left: ");
             while (!textiles.isEmpty()) {
-                rest += textiles.poll();
+                if (textiles.size() == 1) {
+                    System.out.print(textiles.poll());
+                } else {
+                    System.out.print(textiles.poll() + ", ");
+                }
             }
-            System.out.printf("Textiles left: %d%n", rest);
+
         } else {
             System.out.println("Textiles are empty.");
-            sortedMap.forEach((key, value) -> System.out.println(key + " - " + value));
-            int rest = 0;
+            sortedMap.forEach((entry) -> System.out.println(entry.getKey() + " - " + entry.getValue()));
+            System.out.print("Medicaments left: ");
             while (!medicament.isEmpty()) {
-                rest += medicament.pop();
+                if (medicament.size()==1){
+                    System.out.print(medicament.pop());
+                }else {
+                    System.out.print(medicament.pop()+", ");
+                }
             }
-            System.out.printf("Medicaments left: %d%n", rest);
+
         }
 
     }
